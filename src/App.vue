@@ -1,7 +1,7 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
 import Introduction from './components/Introduction.vue'
-import Installation from './components/Installation.vue'
+import Requirement from './components/Requirements.vue'
 </script>
 
 <template>
@@ -14,12 +14,17 @@ import Installation from './components/Installation.vue'
       <h1 class="display-3 text-center">Arch Linux + Hyprland installation</h1>
     </section>
     <hr />
-    <article>
-      <Introduction />
-    </article>
+    <section>
+      <article>
+        <Introduction />
+      </article>
+    </section>
 
     <section>
-      <Installation />
+      <article>
+        <Installation />
+      </article>
+      article
     </section>
   </main>
 </template>
@@ -30,5 +35,10 @@ import Installation from './components/Installation.vue'
   max-height: 60vh;
   height: auto;
   object-fit: cover;
+}
+
+section {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 </style>
