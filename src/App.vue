@@ -6,11 +6,11 @@ import Installation from './components/Installation.vue'
 </script>
 
 <template>
-  <header>
+  <header class="sticky-top">
     <Navbar />
-    <img src="./assets/arch.png" alt="header-background" class="img-fluid" />
   </header>
   <main class="p-4">
+    <img src="./assets/arch.png" alt="header-background" class="img-fluid rounded" />
     <section class="d-flex flex-column">
       <h1 class="display-3 text-center">Arch Linux + Hyprland installation</h1>
     </section>
