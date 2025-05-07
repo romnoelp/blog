@@ -1,6 +1,4 @@
 <template>
-  <h2 class="text-center">Installation Process</h2>
-  <h3>Pre-requisites</h3>
   <div class="container text-center">
     <div class="row align-items-start">
       <div class="col">

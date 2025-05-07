@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar.vue'
 import Introduction from './components/Introduction.vue'
 import Requirement from './components/Requirements.vue'
+import Installation from './components/Installation.vue'
 </script>
 
 <template>
@@ -21,10 +22,14 @@ import Requirement from './components/Requirements.vue'
     </section>
 
     <section>
+      <h2 class="text-center">Installation Process</h2>
+      <h3>Pre-requisites</h3>
       <article>
+        <Requirement />
+      </article>
+      <article class="mt-5">
         <Installation />
       </article>
-      article
     </section>
   </main>
 </template>
