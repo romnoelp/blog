@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps(['sections'])
+const props = defineProps(['sections', 'activeSection'])
 </script>
 
 <template>
@@ -20,7 +20,13 @@ const props = defineProps(['sections'])
       <div class="nav">
         <ul class="nav justify-content-end" v-for="section in props.sections" key="index">
           <li class="nav-item">
-            <a :href="section" class="nav-link">{{ section }}</a>
+            <a
+              :href="'#' + section"
+              class="nav-link"
+              :class="{ active: props.activeSection === section }"
+            >
+              {{ section }}
+            </a>
           </li>
         </ul>
       </div>
@@ -31,5 +37,10 @@ const props = defineProps(['sections'])
 <style scoped>
 ul a {
   color: #1887bf;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #005f99;
 }
 </style>
