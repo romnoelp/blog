@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.vue'
 import Introduction from './components/Introduction.vue'
 import Requirement from './components/Requirements.vue'
 import Installation from './components/Installation.vue'
+import AboutMe from './components/AboutMe.vue'
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const sections = ['introduction', 'installation', 'about-me']
@@ -60,7 +61,7 @@ onMounted(() => {
     </section>
     <hr />
     <section id="about-me">
-      <article>About me</article>
+      <article><AboutMe /></article>
     </section>
   </main>
 </template>
