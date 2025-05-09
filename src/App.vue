@@ -3,11 +3,13 @@ import Navbar from './components/Navbar.vue'
 import Introduction from './components/Introduction.vue'
 import Requirement from './components/Requirements.vue'
 import Installation from './components/Installation.vue'
+
+const sections = ['introduction', 'installation', 'about-me']
 </script>
 
 <template>
   <header class="sticky-top">
-    <Navbar />
+    <Navbar :sections="sections" />
   </header>
   <main class="p-4">
     <img src="./assets/arch.png" alt="header-background" class="img-fluid rounded" />
@@ -30,6 +32,10 @@ import Installation from './components/Installation.vue'
       <article class="mt-5">
         <Installation />
       </article>
+    </section>
+    <hr />
+    <section>
+      <article>About me</article>
     </section>
   </main>
 </template>

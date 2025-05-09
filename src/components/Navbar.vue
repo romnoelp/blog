@@ -1,3 +1,7 @@
+<script setup>
+const props = defineProps(['sections'])
+</script>
+
 <template>
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
@@ -14,15 +18,9 @@
         </a>
       </div>
       <div class="nav">
-        <ul class="nav justify-content-end">
+        <ul class="nav justify-content-end" v-for="section in props.sections" key="index">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Installation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <a :href="section" class="nav-link">{{ section }}</a>
           </li>
         </ul>
       </div>
