@@ -1,7 +1,7 @@
 <template>
   <h2 class="mb-3 text-center">About Me</h2>
   <p class="lead text-center">
-    Hi! I'm Rom, a 3rd year student and aspiring full-stacl web developer based in the Philippines.
+    Hi! I'm Rom, a 3rd year student and aspiring full-stack web developer based in the Philippines.
   </p>
   <div class="about-me">
     <p>
