@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="container d-flex flex-column align-items-center justify-content-center text-justify">
     <h2 class="mb-3 text-center">About Me</h2>
     <p class="lead text-center">
       Hi! I'm Rom, a 3rd year college student currently working at Ebit Global as a web developer.
     </p>
-    <div class="about-me">
+    <div class="about-me text-justify" style="max-width: 800px;">
       <p>
         I'm passionate about building web applications and actively work with technologies like Vue.js,
         React, Bootstrap, Tailwind CSS, Node.js, and Express. I enjoy learning by doing — whether it's creating
